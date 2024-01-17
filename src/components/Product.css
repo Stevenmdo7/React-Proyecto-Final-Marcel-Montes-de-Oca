@@ -1,0 +1,32 @@
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .product:hover {
+    transform: scale(1.1);
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+  }
+  
+  .product label {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  
+  .product input {
+    width: 50px; /* Adjust the width as needed */
+  }
+  
+  .product button {
+    margin-top: 1rem;
+  }
