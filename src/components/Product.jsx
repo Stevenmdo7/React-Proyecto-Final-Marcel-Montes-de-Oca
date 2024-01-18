@@ -1,7 +1,7 @@
 // Product.jsx
-import React, { useState } from 'react';
-import { useCarrito } from './context/CarritoContext';
-import './Product.css';
+import React, { useState } from "react";
+import { useCarrito } from "./context/CarritoContext";
+import "./Product.css";
 
 const Product = ({ id, nombre, descripcion, precio, imagen }) => {
   const { agregarAlCarrito } = useCarrito();

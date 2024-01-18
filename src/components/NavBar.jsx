@@ -1,15 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CartWidget from './CartWidget';
-import './NavBar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
+import "./NavBar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link to="/" className="navbar-brand mx-auto">
-          <img src="/images/logo.png" alt="Logo de Maquillaje T y P" className="img-fluid" />
-          </Link>
+          <img
+            src="/images/logo.png"
+            alt="Logo de Maquillaje T y P"
+            className="img-fluid"
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

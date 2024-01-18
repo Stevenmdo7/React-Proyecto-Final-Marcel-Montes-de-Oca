@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 const CarritoContext = createContext();
 
@@ -13,7 +13,10 @@ export const CarritoProvider = ({ children }) => {
     const nuevoCarrito = carrito.map((item) => {
       if (item.producto.id === productoId) {
         const nuevaCantidad = item.cantidad - cantidad;
-        return { producto: item.producto, cantidad: nuevaCantidad > 0 ? nuevaCantidad : 0 };
+        return {
+          producto: item.producto,
+          cantidad: nuevaCantidad > 0 ? nuevaCantidad : 0,
+        };
       }
       return item;
     });
@@ -34,7 +37,9 @@ export const CarritoProvider = ({ children }) => {
     obtenerCarrito,
   };
 
-  return <CarritoContext.Provider value={value}>{children}</CarritoContext.Provider>;
+  return (
+    <CarritoContext.Provider value={value}>{children}</CarritoContext.Provider>
+  );
 };
 
 export const useCarrito = () => {
